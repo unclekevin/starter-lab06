@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Order placement data for Barker Bob's Burger Bar's Bigger, Better Burger Bonanza
+-->
+
+<!-- An order identifies the customer, order type, burgers, and anything special -->
+<!ELEMENT order (customer, delivery?, burgers, special)>
+
+<!-- A customer is identified simply by their name -->
+<!ELEMENT customer (#PCDATA)>
+
+<!-- An order can be for eat-in, takeout, or delivery ... customer-specified-->
+<!ATTLIST order
+    type    (eatin|takeout|delivery) #REQUIRED
+>
+
+<!-- An order to be delivered will need delivery instructions -->
+<!ELEMENT delivery (#PCDATA)>
+
+<!-- Provide for any special instructions -->
+<!ELEMENT special (#PCDATA)>
+
+<!-- Burgers will be specified individually -->
+<!ELEMENT burger (#PCDATA)>
+
