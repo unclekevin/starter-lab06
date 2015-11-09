@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Order #3 has 2 cheesburgers for Kevin for delivery
+-->
+
+<!DOCTYPE order SYSTEM 'bonanza.dtd'>
+
+<order type="delivery">
+    <customer>Kevin</customer>
+    <burger>
+        <patty type="vege"/>
+        <cheeses top="jack" bottom="jack"/>        
+        <topping type="lettuce"/>
+        <topping type="tomato"/>
+        <topping type="dill"/>
+        <sauce type="ketchup"/>
+        <sauce type="mustard"/>
+        
+    </burger>
+    <burger>
+        <patty type="vege"/>
+        <cheeses top="gouda" bottom="gouda"/>
+        <topping type="lettuce"/>
+        <topping type="tomato"/>
+        <sauce type="ketchup"/>
+        <sauce type="mustard"/>        
+        <instructions>Please put peanut butter on the top of the patty.</instructions>
+    </burger>    
+</order>
